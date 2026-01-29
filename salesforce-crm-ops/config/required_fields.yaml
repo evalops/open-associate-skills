@@ -1,0 +1,36 @@
+# Required fields per object
+# Discover these with: python3 scripts/sf_describe.py <ObjectName>
+# Fields marked required will cause API errors if missing
+
+lead:
+  - LastName
+  - Company
+  - Status
+
+contact:
+  - LastName
+
+account:
+  - Name
+
+opportunity:
+  - Name
+  - StageName
+  - CloseDate
+
+task:
+  - Subject
+
+event:
+  - Subject
+  - StartDateTime
+  - EndDateTime
+
+# Note: Your org may have additional required fields due to:
+# - Validation rules
+# - Record types
+# - Page layouts
+# - Custom required fields
+#
+# Always run schema discovery first:
+# python3 scripts/sf_describe.py Lead Account Opportunity Task Event

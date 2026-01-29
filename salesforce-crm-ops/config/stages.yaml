@@ -1,0 +1,40 @@
+# Stage mappings: logical stage -> Salesforce picklist value
+# Adjust these to match your org's picklist values
+
+# Run `python3 scripts/sf_describe.py Opportunity` to see your org's actual values
+
+opportunity_stages:
+  sourced: "Sourced"
+  first_meeting: "First Meeting"
+  second_meeting: "Second Meeting"
+  diligence: "Diligence"
+  ic_scheduled: "IC Scheduled"
+  term_sheet: "Term Sheet"
+  legal: "Legal/Docs"
+  closed_won: "Closed Won"
+  passed: "Passed"
+
+# Run `python3 scripts/sf_describe.py Lead` to see your org's actual values
+
+lead_statuses:
+  new: "Open - Not Contacted"
+  contacted: "Working - Contacted"
+  qualified: "Qualified"
+  meeting_scheduled: "Meeting Scheduled"
+  unqualified: "Closed - Not Qualified"
+  converted: "Closed - Converted"
+  passed: "Closed - Not Converted"
+
+# Run `python3 scripts/sf_describe.py Task` to see your org's actual values
+
+task_statuses:
+  not_started: "Not Started"
+  in_progress: "In Progress"
+  completed: "Completed"
+  waiting: "Waiting on someone else"
+  deferred: "Deferred"
+
+task_priorities:
+  high: "High"
+  normal: "Normal"
+  low: "Low"

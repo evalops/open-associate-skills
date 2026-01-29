@@ -1,0 +1,64 @@
+# Field mappings: skill field name -> Salesforce API field name
+# Adjust these to match your org's custom fields
+
+lead:
+  email: Email
+  first_name: FirstName
+  last_name: LastName
+  company: Company
+  title: Title
+  website: Website
+  status: Status
+  source: LeadSource
+  description: Description
+  # Custom fields - adjust to your org
+  thesis_tag: Thesis_Tag__c
+  signal_score: Signal_Score__c
+  must_be_true: Must_Be_True__c
+  pass_reason: Pass_Reason__c
+  recheck_date: Recheck_Date__c
+
+account:
+  name: Name
+  website: Website
+  description: Description
+  # Custom fields
+  thesis_tag: Thesis_Tag__c
+
+contact:
+  email: Email
+  first_name: FirstName
+  last_name: LastName
+  title: Title
+  account_id: AccountId
+
+opportunity:
+  name: Name
+  stage: StageName
+  close_date: CloseDate
+  amount: Amount
+  next_step: NextStep
+  probability: Probability
+  account_id: AccountId
+  description: Description
+  # Custom fields
+  thesis_tag: Thesis_Tag__c
+  pass_reason: Pass_Reason__c
+  what_would_change: What_Would_Change__c
+
+task:
+  subject: Subject
+  due_date: ActivityDate
+  status: Status
+  priority: Priority
+  what_id: WhatId  # Related record (Account, Opportunity)
+  who_id: WhoId    # Related person (Lead, Contact)
+  description: Description
+
+event:
+  subject: Subject
+  start_datetime: StartDateTime
+  end_datetime: EndDateTime
+  what_id: WhatId
+  who_id: WhoId
+  description: Description
