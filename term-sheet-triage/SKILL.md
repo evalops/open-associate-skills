@@ -1,6 +1,6 @@
 ---
 name: term-sheet-triage
-description: Analyze and summarize venture financing terms: economics, control, and 'gotchas' with clear implications for founders and investors. Use when reviewing term sheets, SAFEs/notes, side letters, or board/control terms.
+description: "Analyze and summarize venture financing terms: economics, control, and 'gotchas' with clear implications for founders and investors. Use when reviewing term sheets, SAFEs/notes, side letters, or board/control terms."
 license: Proprietary
 compatibility: Requires reading term sheet text; optional cap table math; optional Salesforce logging.
 metadata:

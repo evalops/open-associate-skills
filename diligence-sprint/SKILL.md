@@ -1,6 +1,6 @@
 ---
 name: diligence-sprint
-description: A time-boxed diligence sprint (3–7 days) that burns down the top risks and produces IC-ready evidence. Use when a deal is live and you need speed without losing rigor.
+description: "A time-boxed diligence sprint (3–7 days) that burns down the top risks and produces IC-ready evidence. Use when a deal is live and you need speed without losing rigor."
 license: Proprietary
 compatibility: Works offline; improved with calls and data access; optional Salesforce logging.
 metadata:

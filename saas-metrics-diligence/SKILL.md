@@ -1,6 +1,6 @@
 ---
 name: saas-metrics-diligence
-description: Analyze SaaS and usage-based metrics for diligence: NDR/NRR, gross margin, CAC payback, sales efficiency, cohorts, and unit economics by segment. Use when diligencing B2B SaaS or infra companies.
+description: "Analyze SaaS and usage-based metrics for diligence: NDR/NRR, gross margin, CAC payback, sales efficiency, cohorts, and unit economics by segment. Use when diligencing B2B SaaS or infra companies."
 license: Proprietary
 compatibility: Requires spreadsheet-style data; optional Python for calculation; optional Salesforce logging.
 metadata:

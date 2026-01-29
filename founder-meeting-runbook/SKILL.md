@@ -1,6 +1,6 @@
 ---
 name: founder-meeting-runbook
-description: Run high-signal founder meetings: prep, structure the conversation, capture decision-relevant notes, and send crisp follow-ups. Use when taking first meetings, doing partner prep, or screening deals.
+description: "Run high-signal founder meetings: prep, structure the conversation, capture decision-relevant notes, and send crisp follow-ups. Use when taking first meetings, doing partner prep, or screening deals."
 license: Proprietary
 compatibility: Works offline; improved with web access; optional Salesforce logging.
 metadata:

@@ -1,6 +1,6 @@
 ---
 name: judgment-postmortem-calibration
-description: Build VC judgment faster through structured postmortems: log initial takes, update beliefs with evidence, and review outcomes to refine heuristics. Use after decisions, passes, and major diligence sprints.
+description: "Build VC judgment faster through structured postmortems: log initial takes, update beliefs with evidence, and review outcomes to refine heuristics. Use after decisions, passes, and major diligence sprints."
 license: Proprietary
 compatibility: Works offline; improved with longitudinal tracking; optional Salesforce logging.
 metadata:

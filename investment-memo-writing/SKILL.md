@@ -1,6 +1,6 @@
 ---
 name: investment-memo-writing
-description: Write an investment memo that forces a decision: explicit recommendation, must-be-true claims, evidence, risks, and next steps. Use when preparing for IC or partner discussion.
+description: "Write an investment memo that forces a decision: explicit recommendation, must-be-true claims, evidence, risks, and next steps. Use when preparing for IC or partner discussion."
 license: Proprietary
 compatibility: Works offline; improved with web comps and diligence evidence; optional Salesforce logging.
 metadata:

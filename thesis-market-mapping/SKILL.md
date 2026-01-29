@@ -1,6 +1,6 @@
 ---
 name: thesis-market-mapping
-description: Build and maintain a thesis-driven market map and roadmap: segment taxonomy, company list, wedge hypotheses, and 'must be true' claims. Use when exploring a new sector, refreshing coverage, or generating high-conviction sourcing targets.
+description: "Build and maintain a thesis-driven market map and roadmap: segment taxonomy, company list, wedge hypotheses, and 'must be true' claims. Use when exploring a new sector, refreshing coverage, or generating high-conviction sourcing targets."
 license: Proprietary
 compatibility: Requires web access for research; optional Salesforce logging via REST API.
 metadata:

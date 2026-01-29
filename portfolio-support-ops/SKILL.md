@@ -1,6 +1,6 @@
 ---
 name: portfolio-support-ops
-description: Run portfolio support like an on-call ops function: intake requests, ship intros, recruiting help, board prep, and close-the-loop tracking. Use after investment or when supporting a portfolio CEO.
+description: "Run portfolio support like an on-call ops function: intake requests, ship intros, recruiting help, board prep, and close-the-loop tracking. Use after investment or when supporting a portfolio CEO."
 license: Proprietary
 compatibility: Works offline; improved with a strong operator network; optional Salesforce logging.
 metadata:

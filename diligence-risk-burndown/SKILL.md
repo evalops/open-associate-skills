@@ -1,6 +1,6 @@
 ---
 name: diligence-risk-burndown
-description: Run diligence as a fast risk burn-down: build a ranked risk register, execute the fastest tests, and produce decision-changing evidence. Use when a deal advances past first meeting.
+description: "Run diligence as a fast risk burn-down: build a ranked risk register, execute the fastest tests, and produce decision-changing evidence. Use when a deal advances past first meeting."
 license: Proprietary
 compatibility: Works offline; improved with web access and customer calls; optional Salesforce logging.
 metadata:

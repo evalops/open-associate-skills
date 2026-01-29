@@ -1,6 +1,6 @@
 ---
 name: deal-winning-process
-description: Increase win-rate in competitive rounds: run a clean process, deliver value previews, coordinate partners, and manage timelines without posturing. Use when you’re trying to win a deal.
+description: "Increase win-rate in competitive rounds: run a clean process, deliver value previews, coordinate partners, and manage timelines without posturing. Use when you’re trying to win a deal."
 license: Proprietary
 compatibility: Works offline; improved with warm intros and web research; optional Salesforce logging.
 metadata:

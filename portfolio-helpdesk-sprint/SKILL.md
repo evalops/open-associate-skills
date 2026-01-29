@@ -1,6 +1,6 @@
 ---
 name: portfolio-helpdesk-sprint
-description: Run a lightweight portfolio helpdesk: intake, triage, execute, and close-the-loop with tracking. Use when multiple portfolio support requests come in and you need repeatable execution.
+description: "Run a lightweight portfolio helpdesk: intake, triage, execute, and close-the-loop with tracking. Use when multiple portfolio support requests come in and you need repeatable execution."
 license: Proprietary
 compatibility: Works offline; improved with operator network; optional Salesforce logging.
 metadata:

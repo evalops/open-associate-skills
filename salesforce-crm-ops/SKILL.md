@@ -1,6 +1,6 @@
 ---
 name: salesforce-crm-ops
-description: Operate Salesforce as the VC associate CRM: authenticate via OAuth, query with SOQL, upsert Leads/Accounts, create Opportunities, and log Activities/Tasks for dealflow and portfolio support.
+description: "Operate Salesforce as the VC associate CRM: authenticate via OAuth, query with SOQL, upsert Leads/Accounts, create Opportunities, and log Activities/Tasks for dealflow and portfolio support."
 license: Proprietary
 compatibility: Requires internet access and Salesforce REST API credentials; scripts require Python 3 + requests.
 metadata:

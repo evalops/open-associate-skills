@@ -1,6 +1,6 @@
 ---
 name: dealflow-sourcing-to-memo
-description: End-to-end associate workflow: thesis → sourcing → meetings → diligence → memo, with Salesforce updates. Use when you need to run the full pipeline for a sector or a specific deal.
+description: "End-to-end associate workflow: thesis → sourcing → meetings → diligence → memo, with Salesforce updates. Use when you need to run the full pipeline for a sector or a specific deal."
 license: Proprietary
 compatibility: Requires web access for research + optional Salesforce logging; can be run without scripts.
 metadata:

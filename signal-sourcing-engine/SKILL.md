@@ -1,6 +1,6 @@
 ---
 name: signal-sourcing-engine
-description: Run a systematic sourcing engine: network loops, signal harvesting, and thesis-driven outbound. Use when you need to generate proprietary dealflow, keep a pipeline current, or expand coverage.
+description: "Run a systematic sourcing engine: network loops, signal harvesting, and thesis-driven outbound. Use when you need to generate proprietary dealflow, keep a pipeline current, or expand coverage."
 license: Proprietary
 compatibility: Requires web access for research and outreach; optional Salesforce logging.
 metadata:
