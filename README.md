@@ -1,4 +1,4 @@
-# VC Associate Agent Skills Pack (v0.2)
+# VC Associate Agent Skills Pack (v0.3)
 
 This is a skills bundle for simulating a top-decile venture associate. The skills are designed to force concrete outputs, not just checklists. Every skill answers:
 
@@ -14,6 +14,7 @@ This is a skills bundle for simulating a top-decile venture associate. The skill
 3. **Salesforce as mandatory gate** - No "qualified" company exists without a record + next task + owner.
 4. **Steelman the bear case** - Every memo includes the best argument against.
 5. **Time-boxed workflows with gates** - Kill, continue, or escalate. No deals in limbo.
+6. **Measure your judgment** - Brier scores, calibration tracking, learning rate over time.
 
 ## Skills included
 
@@ -26,11 +27,11 @@ This is a skills bundle for simulating a top-decile venture associate. The skill
 | `founder-meeting-runbook/` | Meeting prep, structure, notes, and follow-up within 2 hours |
 | `diligence-risk-burndown/` | Max 4 risks, fastest tests, anti-confirmation evidence required |
 | `investment-memo-writing/` | First-line recommendation, steelman against, decision log |
-| `deal-winning-process/` | Competitive round closing with value previews |
-| `term-sheet-triage/` | Fast term analysis with scenario tables |
-| `judgment-postmortem-calibration/` | Decision logs and heuristic extraction |
+| `deal-winning-process/` | Competitive round closing with value previews and daily action plans |
+| `term-sheet-triage/` | Waterfall modeling, multi-investor stacks, participation caps |
+| `judgment-postmortem-calibration/` | Brier scores, calibration curves, learning rate measurement |
 | `saas-metrics-diligence/` | SaaS-specific metrics validation |
-| `portfolio-support-ops/` | Portfolio company support workflows |
+| `portfolio-support-ops/` | Portfolio support with SLAs, outcome tracking, and impact measurement |
 | `salesforce-crm-ops/` | CRM operations with field mapping, dry-run mode, schema discovery |
 
 ### Compound skills (full workflows)
@@ -39,29 +40,54 @@ This is a skills bundle for simulating a top-decile venture associate. The skill
 |---|---|
 | `dealflow-sourcing-to-memo/` | End-to-end 3/5/10-day sprints with gates at each phase |
 | `diligence-sprint/` | Time-boxed diligence with daily deliverables and kill gates |
-| `portfolio-helpdesk-sprint/` | Structured portfolio support |
+| `portfolio-helpdesk-sprint/` | Time-boxed portfolio support with triage, SLAs, and metrics |
 
-## Key changes in v0.2
+## What's new in v0.3
 
-- **Top 10 force-ranked list** with must-be-true + wedge + why now + what would change your mind
-- **Kill criteria and contrarian hypotheses** in thesis mapping
-- **Sourcing loops as first-class objects** with weekly/monthly cadence metrics
-- **Max 4 risks** in diligence (forces prioritization)
-- **Anti-confirmation evidence required** (churned customer + competitor user calls)
-- **Steelman "best argument against"** mandatory in memos
-- **Decision log** (what changed since first call) in memos
-- **Time-boxed compound workflows** with explicit kill/continue/escalate gates
-- **Salesforce as hard gate** (no qualified company without SF record + next task)
-- **Field mapping config** + dry-run mode + schema discovery for Salesforce
+**Salesforce scripts now production-ready:**
+- `sf_upsert_lead.py` - Dry-run mode, config-based field mapping, external ID upsert, custom VC fields
+- `sf_create_opportunity.py` - Stage mapping, VC fields (pass reason, what-would-change)
+- `sf_create_task.py` - Full config support
+- `sf_describe.py` - Schema discovery for any org
+- Config templates in `salesforce-crm-ops/config/`
+
+**Portfolio skills now have same rigor as dealflow:**
+- SLAs by request type (P0/P1/P2)
+- Outcome measurement (success rate, impact rating)
+- Help menu templates per company
+- Sprint structure with daily gates
+
+**Judgment calibration now quantified:**
+- Brier score calculation for prediction accuracy
+- Calibration curves (predicted % vs actual %)
+- Learning rate tracking over quarters
+- Archetype performance base rates
+- Heuristics with attached probabilities
+
+**Term sheet analysis now handles complexity:**
+- Multi-investor liquidation stack modeling
+- Full waterfall calculations at multiple exit values
+- Participation cap analysis
+- Side letter review checklist
+- Competing term sheet comparison
 
 ## Quick start
 
 1. Clone this repo
 2. Point your agent at this directory
 3. For Salesforce integration:
-   - Run `python3 salesforce-crm-ops/scripts/sf_describe.py Lead Account Opportunity` to discover your org's schema
-   - Edit `salesforce-crm-ops/config/field_map.yaml` and `stages.yaml` for your org
-   - Always use `--dry-run` flag first
+   ```bash
+   # Discover your org's schema
+   python3 salesforce-crm-ops/scripts/sf_describe.py Lead Account Opportunity Task
+   
+   # Edit config files for your org
+   vim salesforce-crm-ops/config/field_map.yaml
+   vim salesforce-crm-ops/config/stages.yaml
+   
+   # Always dry-run first
+   python3 salesforce-crm-ops/scripts/sf_upsert_lead.py --dry-run \
+     --email founder@example.com --first Ada --last Lovelace --company ExampleAI
+   ```
 
 ## Validation
 
@@ -79,3 +105,5 @@ Top associates don't just run checklists. They constantly answer:
 - "What concrete artifact moves this forward today?"
 
 These skills force those outputs. No wandering. No "watching" without a recheck date. Every workflow ends with a clear decision.
+
+**And top associates measure their judgment.** They track predictions, score them against outcomes, and improve their calibration over time. The judgment-postmortem skill now includes Brier scores and learning rate tracking so you can quantify whether you're getting better at picking.

@@ -1,0 +1,4 @@
+deal_name,prediction_date,prediction,confidence_pct,outcome_date,outcome_binary,brier_contribution,archetype,notes
+ExampleCo,2025-01-15,"Raises Series A within 18 months",70,2026-06-15,1,0.09,Second-time founder with distribution,"Founder had strong network"
+ExampleCo,2025-01-15,"Achieves $1M ARR in 12 months",50,2026-01-15,0,0.25,Second-time founder with distribution,"Market slower than expected"
+ExampleCo,2025-01-15,"Top risk: churn exceeds 5% monthly",25,2026-01-15,0,0.0625,Second-time founder with distribution,"Churn was 2%"
